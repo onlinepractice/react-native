@@ -96,4 +96,3 @@ BUILD SUCCESSFUL
 Total time: 10 mins 9.337 secs
 
 This build could be faster, please consider using the Gradle Daemon: https://docs.gradle.org/2.14.1/userguide/gradle_daemon.html
-L-156087323:android sa298306$ 
