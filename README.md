@@ -27,7 +27,7 @@ React native framework was made public by Facebook (https://facebook.github.io/r
 	b. Expo XE client on android and iOS mobile phone
 3. Running your app on a simulator or virtual device (Android)
 	a. Run Android emulator  or connect real android device  (Android Studi -> Tools -> Android -> AVD Manager -> create one virtual device)
-	b. Run app on Android emulator: react-native run-android
+	b. Run app: react-native run-android
 4. Running your app on a simulator or virtual device (Android)
 	a. Run ios emulator  or connect real ios device 
-	b. Run app on ios emulator:		react-native run-ios
+	b. Run app: react-native run-ios
