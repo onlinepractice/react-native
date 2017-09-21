@@ -87,3 +87,5 @@ Copy the entire licenses/ directory and paste it into the Android SDK home direc
 Gradle will now be able to automatically download missing packages your project depends on.
 
 Note that this feature is automatically disabled for builds you run from Android Studio, as the SDK manager handles downloading missing packages for the IDE. You can also manually disable this feature by setting android.builder.sdkDownload=false in the gradle.properties file for your project.
+
+ref: https://developer.android.com/studio/intro/update.html#sdk-manager
