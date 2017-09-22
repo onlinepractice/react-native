@@ -6,14 +6,15 @@ This repository contains react native code as set of projects like authenticatio
 
 ## Installation
 
-*refer wiki page for more detail.s
 In simple way, try this from your terminal:
-export ANDROID_HOME=<your android sdk location>
-git clone https://github.com/onlinepractice/react-native
+1. export ANDROID_HOME=<your android sdk location>
+2. git clone https://github.com/onlinepractice/react-native
+
+note: *refer wiki page for more detail.s
 
 ## Usage
-go to <project location>
-run 'npm installa'
-run 'react-native run-andoird' for android device
-run 'react-native run-andoird' for iOS device
+1. go to <project location>
+2. run 'npm installa'
+3. run 'react-native run-andoird' for android device
+4. run 'react-native run-andoird' for iOS device
 
