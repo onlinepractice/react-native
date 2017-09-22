@@ -14,7 +14,7 @@ note: *refer wiki page for more detail.s
 
 ## Usage
 1. go to <project location>
-2. run 'npm installa'
+2. run 'npm install'
 3. run 'react-native run-andoird' for android device
 4. run 'react-native run-andoird' for iOS device
 
