@@ -1,5 +1,8 @@
-# reactnative
-this repository is to build mobile app using react native frameworkWelcome to React Native Authentication Project. The purpose of this project is to showcase all the configurations, coding and techniques required to run the app on anroid or iOS mobile devices.
+# react-native
+this repository is to build mobile app using react native framework. Each project within this repository will be treated as independent project so that teams can work without issues. There will be another project to consolidate the code at later stage.
+
+Authentication Project
+Welcome to React Native Authentication Project. The purpose of this project is to showcase all the configurations, coding and techniques required to perform different kind of authentications from the app on anroid or iOS mobile devices.
 
 Before we begin writing code, there are couple of things to check as pre-conditions
 
