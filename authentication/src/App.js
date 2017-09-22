@@ -7,13 +7,12 @@ import LoginForm from './components/LoginForm';
 class App extends Component {
   componentWillMount() {
     firebase.initializeApp({
-
-        apiKey: 'AIzaSyCDjGkCl8gzj4Z98gTMJm2RqP4OQARnw8Q',
-    authDomain: 'auth-613b6.firebaseapp.com',
-    databaseURL: 'https://auth-613b6.firebaseio.com',
-    projectId: 'auth-613b6',
-    storageBucket: 'auth-613b6.appspot.com',
-    messagingSenderId: '529616686082'
+    apiKey: 'AIzaSyCHihM8qEiFHRGrC2TlIn_8LmJp3MDoQdc',
+    authDomain: 'burning-heat-9217.firebaseapp.com',
+    databaseURL: 'https://burning-heat-9217.firebaseio.com/',
+    projectId: 'burning-heat-9217',
+    storageBucket: 'burning-heat-9217.appspot.com',
+    messagingSenderId: '983222773561'
   });
   }
   render() {
