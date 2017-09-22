@@ -7,7 +7,7 @@ This repository contains react native code as set of projects like authenticatio
 ## Installation
 
 In simple way, try this from your terminal:
-1. export ANDROID_HOME= /Users/svaishya75/Library/Android/sdk  (this is my setup in Macbook)
+1. export ANDROID_HOME= /usr/local//Android/sdk
 2. git clone https://github.com/onlinepractice/react-native
 
 note: *refer wiki page for more detail.s
