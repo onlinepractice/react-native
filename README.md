@@ -18,3 +18,6 @@ note: *refer wiki page for more detail.s
 3. run 'react-native run-andoird' for android device
 4. run 'react-native run-andoird' for iOS device
 
+## Contributors
+1. Sanjeev Vaishya
+2. Piyush Gupta
