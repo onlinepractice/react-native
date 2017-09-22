@@ -1,16 +1,19 @@
-# react-native
+
+## react-native
 this repository is to build mobile app using react native framework. Each project within this repository will be treated as independent project so that teams can work without issues. There will be another project to consolidate the code at later stage.
 
-Authentication Project
-Welcome to React Native Authentication Project. The purpose of this project is to showcase all the configurations, coding and techniques required to perform different kind of authentications from the app on anroid or iOS mobile devices.
+This repository contains react native code as set of projects like authentication.
 
-Before we begin writing code, there are couple of things to check as pre-conditions
+## Installation
 
-1. React Native framework setup with Node: refer (refer the wiki page https://github.com/onlinepractice/react-native/wiki/Node.js-for-React-Native
-2. IDE installation refer the wiki page https://github.com/onlinepractice/react-native/wiki/Expo-XDE-Tool-Setup
-3. Running your app on a simulator or virtual device (Android)
-	a. Run Android emulator  or connect real android device  (Android Studio -> Tools -> Android -> AVD Manager -> create one virtual device)
-	b. Run app: react-native run-android
-4. Running your app on a simulator or virtual device (iOS)
-	a. Run ios emulator  or connect real ios device  (dont need to start the emulator manually, if you have got Xcode it will open it for you
-	b. Run app: react-native run-ios
+*refer wiki page for more detail.s
+In simple way, try this from your terminal:
+export ANDROID_HOME=<your android sdk location>
+git clone https://github.com/onlinepractice/react-native
+
+## Usage
+go to <project location>
+run 'npm installa'
+run 'react-native run-andoird' for android device
+run 'react-native run-andoird' for iOS device
+
