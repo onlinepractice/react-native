@@ -2,4 +2,4 @@
  import App from './src/App';
 
 //render it to the device
-AppRegistry.registerComponent('albums', () => App);
+AppRegistry.registerComponent('authentication', () => App);
