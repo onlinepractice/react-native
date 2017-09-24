@@ -1,11 +1,41 @@
 import React, { Component } from 'react';
 import { Text } from 'react-native';
-
-import { Card, Button, CardSection, Input } from './common';
+import firebase from 'firebase';
+import { Card, Button, CardSection, Input, Spin } from './common';
 
 class LoginForm extends Component {
-  state = { email: '' };
-  state = { password: '' };
+  state = { email: '', password: '', error: '', loading: false };
+  onButtonPress() {
+    const { email, password } = this.state;
+    this.setState({ error: '', loading: true });
+    firebase.auth().signInWithEmailAndPassword(email, password)
+    .then(this.onLoginSuccess.bind(this))
+    .catch(() => {
+      firebase.auth().createUserWithEmailAndPassword(email, password)
+      .then(this.onLoginSuccess.bind(this))
+      .catch(() => {
+        this.setState({ error: 'Incorrect Email or Password', loading: false });
+      });
+    });
+  }
+onLoginSuccess() {
+  this.setState({
+    email: '',
+    password: '',
+    loading: false,
+    error: ''
+    });
+}
+  renderButton() {
+    if (this.state.loading) {
+    return <Spin size="small" / >;
+    }
+    return (
+      <Button onPress={this.onButtonPress.bind(this)}>
+        Login
+      </Button>
+    );
+  }
   render() {
 return (
       <Card>
@@ -40,11 +70,12 @@ return (
            / >
          </CardSection>
 
+            <Text style={{ fontSize: 20, color: 'red', alignItems: 'center' }}>
+            {this.state.error}
+            </Text>
 
          <CardSection>
-           <Button>
-             Login
-           </Button>
+          {this.renderButton()}
          </CardSection>
 
       </Card>
