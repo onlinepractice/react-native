@@ -29,7 +29,7 @@
 		"run-android-with-bundle": "npm run preinstall && react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res npm install",
     		"run-android-new-port": "npm run update-port-android && npm install && react-native run-android",
 		"run-ios-new-port": "npm install && npm run update-react-packager-port-ios && react-native run-ios",
-		"run-android": "npm run preinstall && npm install && && react-native run-android",
-		"run-ios": "npm run preinstall && npm install && && react-native run-ios"
+		"run-android": "npm run preinstall && npm install && react-native run-android",
+		"run-ios": "npm run preinstall && npm install && react-native run-ios"
   	}
 }
