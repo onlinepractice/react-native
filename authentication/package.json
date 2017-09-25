@@ -21,6 +21,12 @@
 		"preset": "react-native"
 	},
   	"scripts": {
-    		"android-linux": "react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res && react-native run-android"
+		"set-env": ". environment.sh",
+		"run-packager": "react-native start --port=$REACT_PACKAGER_PORT &",
+		"update-react-packager-port-ios": ". environment.sh  && mv  $REACT_NATIVE_AUTH_PROJECT_PATH/node_modules/react-native/React/React.xcodeproj/project.pbxproj $REACT_NATIVE_AUTH_PROJECT_PATH/node_modules/react-native/React/React.xcodeproj/project.pbxproj.org && cp $REACT_REPO_ROOT/bugfixes/project.pbxproj $REACT_NATIVE_AUTH_PROJECT_PATH/node_modules/react-native/React/React.xcodeproj/",
+    		"run-android": "npm run set-env && npm install && react-native run-android",
+		"run-android-with-bundle": "npm run set-env && react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res npm install && && react-native run-android",
+		"run-ios-new-packager-port": "npm install && npm run update-react-packager-port-ios && react-native run-ios",
+		"run-ios": "npm run set-env && npm install && && react-native run-ios"
   	}
 }
