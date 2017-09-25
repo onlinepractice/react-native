@@ -21,12 +21,15 @@
 		"preset": "react-native"
 	},
   	"scripts": {
-		"set-env": ". environment.sh",
-		"run-packager": "react-native start --port=$REACT_PACKAGER_PORT &",
-		"update-react-packager-port-ios": ". environment.sh  && mv  $REACT_NATIVE_AUTH_PROJECT_PATH/node_modules/react-native/React/React.xcodeproj/project.pbxproj $REACT_NATIVE_AUTH_PROJECT_PATH/node_modules/react-native/React/React.xcodeproj/project.pbxproj.org && cp $REACT_REPO_ROOT/bugfixes/project.pbxproj $REACT_NATIVE_AUTH_PROJECT_PATH/node_modules/react-native/React/React.xcodeproj/",
-    		"run-android": "npm run set-env && npm install && react-native run-android",
-		"run-android-with-bundle": "npm run set-env && react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res npm install && && react-native run-android",
-		"run-ios-new-packager-port": "npm install && npm run update-react-packager-port-ios && react-native run-ios",
-		"run-ios": "npm run set-env && npm install && && react-native run-ios"
+		"preinstall": ". environment.sh",
+		"install": "npm install",
+		"run-packager": "react-native start --port",
+		"update-port-ios": "npm preinstall  && mv  $REACT_NATIVE_AUTH_PROJECT_PATH/node_modules/react-native/React/React.xcodeproj/project.pbxproj $REACT_NATIVE_AUTH_PROJECT_PATH/node_modules/react-native/React/React.xcodeproj/project.pbxproj.org && cp $REACT_REPO_ROOT/bugfixes/project.pbxproj.fixed $REACT_NATIVE_AUTH_PROJECT_PATH/node_modules/react-native/React/React.xcodeproj/",
+		"update-port-android": "npm run preinstall  && mv  $REACT_NATIVE_AUTH_PROJECT_PATH/node_modules/react-native/local-cli/runAndroid/runAndroid.js $REACT_NATIVE_AUTH_PROJECT_PATH/node_modules/react-native/local-cli/runAndroid/runAndroid.js.org && cp $REACT_REPO_ROOT/bugfixes/runAndroid.js.fixed $REACT_NATIVE_AUTH_PROJECT_PATH/node_modules/react-native/local-cli/runAndroid/runAndroid.js",
+		"run-android-with-bundle": "npm run preinstall && react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res npm install",
+    		"run-android-new-port": "npm run update-port-android && npm install && react-native run-android",
+		"run-ios-new-port": "npm install && npm run update-react-packager-port-ios && react-native run-ios",
+		"run-android": "npm run preinstall && npm install && && react-native run-android"
+		"run-ios": "npm run preinstall && npm install && && react-native run-ios"
   	}
 }
