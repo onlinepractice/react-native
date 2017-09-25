@@ -33,11 +33,23 @@ note: *refer wiki page for more detail.s
 ### If you want to use npm tool to run project
 1. go to project location (in this case 'path to clone this project/authentication folder')
 2. execute command -> npm run <script name> (just execute npm run on terminal)
-  2.1 Scripts available in authentication via `npm run-script`:
-  2.1.1  npm run set-env (to set the environment like $ANDROID_HOME, $PATH)
-  2.1.2  npm runrun-android (to install node modules and execute command react-native run-android)
-  2.1.3  npm runrun-android-with-bundle (to install android bundle node modules and execute command react-native run-android)
-  2.1.4  npm run run-ios (to install node modules and execute command react-native run-android)
+2.1. npm run set-env (to set the environment like $ANDROID_HOME, $PATH)
+2.2.  npm runrun-android (to install node modules and execute command react-native run-android)
+2.3.  npm runrun-android-with-bundle (to install android bundle node modules and execute command react-native run-android)
+2.4.  npm run run-ios (to install node modules and execute command react-native run-android)
+3. Scripts available in authentication via `npm run-script`:
+3.1. start
+    react-native-scripts start
+3.2.  test
+    node node_modules/jest/bin/jest.js --watch
+
+available via `npm run-script`:
+3.3.  eject
+    react-native-scripts eject
+3.4  android
+    react-native-scripts android
+3.5  ios
+    react-native-scripts ios
   
 
 ## Contributors
