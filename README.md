@@ -24,9 +24,20 @@ note: *refer wiki page for more detail.s
 
 ## Usage
 1. go to <project location>
-2. run 'npm install'
-3. run 'react-native run-andoird' for android device
-4. run 'react-native run-andoird' for iOS device
+### If you want to run it manually, follow these steps
+1.1. run 'npm install'
+1.2. run 'react-native run-andoird' for android device
+1.3. run 'react-native run-andoird' for iOS device
+###If you want to use npm, run npm run-script <script name>
+Scripts available in authentication via `npm run-script`:
+  set-env
+    . environment.sh
+  run-android
+    npm install && react-native run-android
+  run-android-with-bundle
+    react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res npm install && && react-native run-android
+  run-ios
+    npm install && react-native run-ios
 
 ## Contributors
 1. Sanjeev Vaishya
