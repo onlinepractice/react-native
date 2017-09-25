@@ -22,7 +22,6 @@
 	},
   	"scripts": {
 		"preinstall": ". environment.sh",
-		"install": "npm install",
 		"run-packager": "react-native start --port",
 		"update-port-ios": "npm preinstall  && mv  $REACT_NATIVE_AUTH_PROJECT_PATH/node_modules/react-native/React/React.xcodeproj/project.pbxproj $REACT_NATIVE_AUTH_PROJECT_PATH/node_modules/react-native/React/React.xcodeproj/project.pbxproj.org && cp $REACT_REPO_ROOT/bugfixes/project.pbxproj.fixed $REACT_NATIVE_AUTH_PROJECT_PATH/node_modules/react-native/React/React.xcodeproj/",
 		"update-port-android": "npm run preinstall  && mv  $REACT_NATIVE_AUTH_PROJECT_PATH/node_modules/react-native/local-cli/runAndroid/runAndroid.js $REACT_NATIVE_AUTH_PROJECT_PATH/node_modules/react-native/local-cli/runAndroid/runAndroid.js.org && cp $REACT_REPO_ROOT/bugfixes/runAndroid.js.fixed $REACT_NATIVE_AUTH_PROJECT_PATH/node_modules/react-native/local-cli/runAndroid/runAndroid.js",
