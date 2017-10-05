@@ -1,6 +1,6 @@
 
 ## react-native
-this repository is to build mobile app using react native framework. Each project within this repository will be treated as independent project so that teams can work without issues. There will be another project to consolidate the code at later stage.
+This repository is to build mobile app using react native framework. Each project within this repository will be treated as independent project so that teams can work without issues. There will be another project to consolidate the code at later stage.
 
 This repository contains react native code as set of projects like authentication.
 
